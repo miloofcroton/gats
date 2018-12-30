@@ -16,9 +16,9 @@ react-helmet
 font-awesome
 
 to add:
-flow?
 jest
 enzyme
+flow?
 typography?
 redux?
 
