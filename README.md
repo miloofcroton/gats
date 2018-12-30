@@ -15,23 +15,22 @@
   - [Travis CI](https://travis-ci.com/)
 - Node Tools
   - Babel (via gatsby)
-  - Webpack (via gatsby-config.js)
-  - ESLint
+  - Webpack (via gatsby)
+  - [ESLint](https://eslint.org/docs)
+  - [Jest](https://jestjs.io/docs/)
+  - [Enzyme](https://airbnb.io/enzyme/docs/api/)
   - [Prettier](https://prettier.io/docs/)
-
 
 ### To add
 
   - Redux?
-  - [Flow](https://flow.org/en/docs/getting-started/)
+  - [Flow](https://flow.org/en/docs/getting-started/)?
   - material icons?
   - better configs
     - ESlint
     - Babel
     - Webpack
     - Gatsby
-    - Jest
-    - Enzyme
   - PWA config
 
 ### To remove
