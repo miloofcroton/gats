@@ -4,6 +4,11 @@ import Helmet from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import Layout from '../../layout';
 import { StyledList } from '../../styles/Lists';
+import styled from 'styled-components';
+
+const TagDiv = styled.div`
+  margin-bottom: 6rem;
+`;
 
 const TagsPage = ({
   data: {
@@ -14,27 +19,20 @@ const TagsPage = ({
   },
 }) => (
   <Layout>
-    <section className="section">
+    <section>
       <Helmet title={`Tags | ${title}`} />
-      <div className="container content">
-        <div className="columns">
-          <div
-            className="column is-10 is-offset-1"
-            style={{ marginBottom: '6rem' }}
-          >
-            <h1 className="title is-size-2 is-bold-light">Tags</h1>
-            <StyledList>
-              {group.map(tag => (
-                <li key={tag.fieldValue}>
-                  <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                    {tag.fieldValue} ({tag.totalCount})
-                  </Link>
-                </li>
-              ))}
-            </StyledList>
-          </div>
-        </div>
-      </div>
+      <TagDiv>
+        <h1>Tags</h1>
+        <StyledList>
+          {group.map(tag => (
+            <li key={tag.fieldValue}>
+              <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                {tag.fieldValue} ({tag.totalCount})
+              </Link>
+            </li>
+          ))}
+        </StyledList>
+      </TagDiv>
     </section>
   </Layout>
 );

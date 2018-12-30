@@ -4,7 +4,11 @@ import { kebabCase } from 'lodash';
 import { Link } from 'gatsby';
 import Content from '../../components/Content';
 import { StyledList } from '../../styles/Lists';
+import styled from 'styled-components';
 
+const TagDiv = styled.div`
+  margin-top: 4rem;
+`;
 
 const BlogPostTemplate = ({
   content,
@@ -17,31 +21,23 @@ const BlogPostTemplate = ({
   const PostContent = contentComponent || Content;
 
   return (
-    <section className="section">
+    <section>
       {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: '4rem' }}>
-                <h4>Tags</h4>
-                <StyledList>
-                  {tags.map(tag => (
-                    <li key={tag + 'tag'}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </StyledList>
-              </div>
-            ) : null}
-          </div>
-        </div>
-      </div>
+      <h1>{title}</h1>
+      <p>{description}</p>
+      <PostContent content={content} />
+      {tags && tags.length ? (
+        <TagDiv>
+          <h4>Tags</h4>
+          <StyledList>
+            {tags.map(tag => (
+              <li key={tag + 'tag'}>
+                <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+              </li>
+            ))}
+          </StyledList>
+        </TagDiv>
+      ) : null}
     </section>
   );
 };
