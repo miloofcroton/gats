@@ -1,11 +1,11 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import Layout from '../../layout';
+import App from '../../app';
 
 export default class Index extends React.Component {
   render() {
     return (
-      <Layout>
+      <App>
         <section>
           <h1>Hi people</h1>
           <p>
@@ -40,7 +40,7 @@ export default class Index extends React.Component {
             for a working example.
           </p>
         </section>
-      </Layout>
+      </App>
     );
   }
 }

@@ -11,6 +11,10 @@ const ROUTES = [
     label: 'About',
   },
   {
+    href: '/posts',
+    label: 'Blog',
+  },
+  {
     href: '/products',
     label: 'Products',
   },

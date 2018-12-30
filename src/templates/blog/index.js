@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
-import Layout from '../../layout';
+import App from '../../app';
 import { HTMLContent } from '../../components/Content';
 import BlogPostTemplate from './Template';
 
@@ -10,7 +10,7 @@ const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
-    <Layout>
+    <App>
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
@@ -27,7 +27,7 @@ const BlogPost = ({ data }) => {
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
-    </Layout>
+    </App>
   );
 };
 

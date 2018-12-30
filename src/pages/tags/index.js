@@ -2,7 +2,7 @@ import React from 'react';
 import { kebabCase } from 'lodash';
 import Helmet from 'react-helmet';
 import { Link, graphql } from 'gatsby';
-import Layout from '../../layout';
+import App from '../../app';
 import { StyledList } from '../../styles/Lists';
 import styled from 'styled-components';
 
@@ -18,7 +18,7 @@ const TagsPage = ({
     },
   },
 }) => (
-  <Layout>
+  <App>
     <section>
       <Helmet title={`Tags | ${title}`} />
       <TagDiv>
@@ -34,7 +34,7 @@ const TagsPage = ({
         </StyledList>
       </TagDiv>
     </section>
-  </Layout>
+  </App>
 );
 
 export default TagsPage;

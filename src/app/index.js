@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Head from './Head';
 import Header from './header';
 import Footer from './footer';
 import { ThemeProvider } from 'styled-components';
 import { theme, GlobalStyle } from './Globals';
+
+import Data from './Data';
+
 import addIcons from './fontAwesome';
 addIcons();
 
@@ -11,15 +14,15 @@ addIcons();
 const App = ({ data, children }) => {
   return (
     <ThemeProvider theme={theme}>
-      <div>
+      <Fragment>
         <Head data={data} />
         <GlobalStyle />
         <Header />
-        <div>{children}</div>
+        {children}
         <Footer />
-      </div>
+      </Fragment>
     </ThemeProvider>
   );
 };
 
-export default App;
+export default Data(App);

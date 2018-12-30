@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { Link, graphql } from 'gatsby';
-import Layout from '../../layout';
+import App from '../../app';
 
 import { StyledList } from '../../styles/Lists';
 import styled from 'styled-components';
@@ -28,7 +28,7 @@ class TagRoute extends React.Component {
     } tagged with “${tag}”`;
 
     return (
-      <Layout>
+      <App>
         <section>
           <Helmet title={`${tag} | ${title}`} />
           <TagDiv>
@@ -37,7 +37,7 @@ class TagRoute extends React.Component {
             <Link to="/tags/">Browse all tags</Link>
           </TagDiv>
         </section>
-      </Layout>
+      </App>
     );
   }
 }

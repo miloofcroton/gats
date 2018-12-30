@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import Layout from '../../layout';
+import App from '../../app';
 import ProductPageTemplate from './Template';
 
 const ProductPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
-    <Layout>
+    <App>
       <ProductPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
@@ -20,7 +20,7 @@ const ProductPage = ({ data }) => {
         fullImage={frontmatter.full_image}
         pricing={frontmatter.pricing}
       />
-    </Layout>
+    </App>
   );
 };
 
