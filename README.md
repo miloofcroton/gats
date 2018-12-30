@@ -19,7 +19,6 @@ to add:
 jest
 enzyme
 flow?
-typography?
 redux?
 
 to remove:

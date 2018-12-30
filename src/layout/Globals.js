@@ -45,4 +45,16 @@ export const theme = {
   black: 'rgb(33,33,33)',
   grey: 'rgb(196,196,196)',
   white: 'rgb(255,255,255)',
+
+  baseFontSize: '18px',
+  baseLineHeight: 1.45,
+  headerFontFamily: [
+    'Avenir Next',
+    'Helvetica Neue',
+    'Segoe UI',
+    'Helvetica',
+    'Arial',
+    'sans-serif',
+  ],
+  bodyFontFamily: ['Georgia', 'serif'],
 };
