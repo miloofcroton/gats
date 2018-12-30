@@ -17,12 +17,13 @@
   - Babel (via gatsby)
   - Webpack (via gatsby-config.js)
   - ESLint
+  - [Prettier](https://prettier.io/docs/)
+
 
 ### To add
 
   - Jest
   - Enzyme
-  - Prettier
   - [Flow](https://flow.org/en/docs/getting-started/)
   - material icons?
   - better configs
