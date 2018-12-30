@@ -6,6 +6,32 @@ import Features from '../components/Features';
 import Testimonials from '../components/Testimonials';
 import Pricing from '../components/Pricing';
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
+import styled from 'styled-components';
+
+const FullWidthImage = styled.div`
+
+  ${ props => props.marginTop && 'margin-top: 0' }
+
+  width: 100vw;
+  height: 400px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: 5em -50vw;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* background-image: url(${ ({ image }) => {
+    !!image.childImageSharp
+      ? image.childImageSharp.fluid.src
+      : image;
+  }}); */
+`;
+
+
 
 export const ProductPageTemplate = ({
   image,
@@ -24,8 +50,7 @@ export const ProductPageTemplate = ({
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="content">
-              <div
-                className="full-width-image-container margin-top-0"
+              <FullWidthImage
                 style={{
                   backgroundImage: `url(${
                     !!image.childImageSharp
@@ -45,7 +70,7 @@ export const ProductPageTemplate = ({
                 >
                   {title}
                 </h2>
-              </div>
+              </FullWidthImage>
               <div className="columns">
                 <div className="column is-7">
                   <h3 className="has-text-weight-semibold is-size-2">
@@ -85,8 +110,7 @@ export const ProductPageTemplate = ({
                 </div>
               </div>
               <Testimonials testimonials={testimonials} />
-              <div
-                className="full-width-image-container"
+              <FullWidthImage
                 style={{
                   backgroundImage: `url(${
                     fullImage.childImageSharp

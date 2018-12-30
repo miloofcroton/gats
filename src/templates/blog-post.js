@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import { graphql, Link } from 'gatsby';
 import Layout from '../layout';
 import Content, { HTMLContent } from '../components/Content';
+import { StyledList } from '../styles/Lists';
 
 export const BlogPostTemplate = ({
   content,
@@ -30,13 +31,13 @@ export const BlogPostTemplate = ({
             {tags && tags.length ? (
               <div style={{ marginTop: '4rem' }}>
                 <h4>Tags</h4>
-                <ul className="taglist">
+                <StyledList>
                   {tags.map(tag => (
                     <li key={tag + 'tag'}>
                       <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
                     </li>
                   ))}
-                </ul>
+                </StyledList>
               </div>
             ) : null}
           </div>

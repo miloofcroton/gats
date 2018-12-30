@@ -3,6 +3,7 @@ import { kebabCase } from 'lodash';
 import Helmet from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import Layout from '../../layout';
+import { StyledList } from '../../styles/Lists';
 
 const TagsPage = ({
   data: {
@@ -22,7 +23,7 @@ const TagsPage = ({
             style={{ marginBottom: '6rem' }}
           >
             <h1 className="title is-size-2 is-bold-light">Tags</h1>
-            <ul className="taglist">
+            <StyledList>
               {group.map(tag => (
                 <li key={tag.fieldValue}>
                   <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
@@ -30,7 +31,7 @@ const TagsPage = ({
                   </Link>
                 </li>
               ))}
-            </ul>
+            </StyledList>
           </div>
         </div>
       </div>
