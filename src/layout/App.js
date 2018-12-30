@@ -5,7 +5,7 @@ import Footer from './footer';
 import { ThemeProvider } from 'styled-components';
 import { theme, GlobalStyle } from './Globals';
 
-import './all.sass';
+// import './all.sass';
 
 const App = ({ data, children }) => {
   return (

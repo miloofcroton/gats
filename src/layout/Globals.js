@@ -4,13 +4,13 @@ export const GlobalStyle = createGlobalStyle`
 
   @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono');
 
-  #root {
+  #___gatsby {
     display: flex;
     flex-direction: column;
     height: 100vh;
     justify-content: space-between;
     text-align: center;
-    margin: 0;
+    margin: 0px;
   }
 
   html {
@@ -26,8 +26,8 @@ export const GlobalStyle = createGlobalStyle`
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     font-size: 1.5rem;
     line-height: 2;
   }
