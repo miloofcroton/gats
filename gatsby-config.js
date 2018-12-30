@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: 'Gatsby + Netlify CMS Starter',
-    description: 'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+    description:
+      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
   },
   plugins: [
+    'gatsby-plugin-eslint',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
@@ -26,6 +28,12 @@ module.exports = {
       options: {
         path: `${__dirname}/src/img`,
         name: 'images',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-styled-components',
+      options: {
+        // Add any options here
       },
     },
     'gatsby-plugin-sharp',
@@ -53,8 +61,8 @@ module.exports = {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {
               destinationDir: 'static',
-            }
-          }
+            },
+          },
         ],
       },
     },
@@ -67,4 +75,4 @@ module.exports = {
     'gatsby-plugin-purgecss', // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
-}
+};
