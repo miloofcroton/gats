@@ -7,7 +7,7 @@ import { theme, GlobalStyle } from './Globals';
 
 import Data from './Data';
 
-import addIcons from './fontAwesome';
+import addIcons from './imports/fontAwesome';
 addIcons();
 
 
