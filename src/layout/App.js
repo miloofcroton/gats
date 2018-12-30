@@ -4,8 +4,9 @@ import Header from './header';
 import Footer from './footer';
 import { ThemeProvider } from 'styled-components';
 import { theme, GlobalStyle } from './Globals';
+import addIcons from './fontAwesome';
+addIcons();
 
-// import './all.sass';
 
 const App = ({ data, children }) => {
   return (
