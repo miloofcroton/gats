@@ -20,6 +20,7 @@ jest
 enzyme
 flow?
 redux?
+editorconfig?
 
 to remove:
 lodash
