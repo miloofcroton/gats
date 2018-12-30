@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import Layout from '../layout';
-import Features from '../components/Features';
-import Testimonials from '../components/Testimonials';
-import Pricing from '../components/Pricing';
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
+import Layout from '../../layout';
+import Features from '../../components/Features';
+import Testimonials from '../../components/Testimonials';
+import Pricing from '../../components/Pricing';
+import PreviewCompatibleImage from '../../components/PreviewCompatibleImage';
 import styled from 'styled-components';
 
 const FullWidthImage = styled.div`

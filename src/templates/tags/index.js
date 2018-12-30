@@ -1,9 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { Link, graphql } from 'gatsby';
-import Layout from '../layout';
+import Layout from '../../layout';
 
-import { StyledList } from '../styles/Lists';
+import { StyledList } from '../../styles/Lists';
 
 class TagRoute extends React.Component {
   render() {
