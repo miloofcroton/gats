@@ -14,6 +14,10 @@ const IconWrapper = styled.li`
 
   a {
     color: black;
+
+    svg {
+      height: 24px;
+    }
   }
 `;
 
