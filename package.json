@@ -60,7 +60,7 @@
     "start": "npm run develop",
     "clean": "rimraf .cache public",
     "build": "npm run clean && gatsby build",
-    "develop": "npm run clean && gatsby develop",
+    "develop": "npm run clean && gatsby develop -p 8080",
     "serve": "gatsby serve",
     "format": "prettier --trailing-comma es5 --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "exit 0"
