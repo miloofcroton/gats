@@ -1,24 +1,25 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 
+import defaultLogo from '../../img/logo/logo.png';
+import altLogo from '../../img/logo/logo-alt1.png';
+
 const LogoWrapper = styled.img`
   width: 50px;
   padding-top: 10px;
 `;
 
 export default class Logo extends PureComponent {
-  defaultLogo = '/src/assets/logo/logo.png';
-  altLogo = '/src/assets/logo/logo-alt1.png';
 
-  logoMouseOver = ({ target }) => (target.src = this.altLogo);
-  logoMouseOut = ({ target }) => (target.src = this.defaultLogo);
+  logoMouseOver = ({ target }) => (target.src = altLogo);
+  logoMouseOut = ({ target }) => (target.src = defaultLogo);
 
   render() {
     return (
       <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0">
         <LogoWrapper
           alt="logo"
-          src="/src/assets/logo/logo.png"
+          src={defaultLogo}
           onMouseOver={this.logoMouseOver}
           onMouseOut={this.logoMouseOut}
         />
