@@ -23,6 +23,4 @@ typography?
 redux?
 
 to remove:
-bulma
-node-sass
 lodash
