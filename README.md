@@ -1,3 +1,5 @@
+[![Master Build Status](https://travis-ci.com/miloofcroton/gatsby-homepage.svg?branch=master)](https://travis-ci.com/miloofcroton/)
+
 # My homepage in Gatsby
 
 ## Tools
