@@ -1,8 +1,9 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
+import { withPrefix } from 'gatsby';
 
-import defaultLogo from '../../img/logo/logo.png';
-import altLogo from '../../img/logo/logo-alt1.png';
+const defaultLogo = withPrefix('/logo/logo.png');
+const altLogo = withPrefix('logo/logo-alt1.png');
 
 const LogoWrapper = styled.img`
   width: 50px;
