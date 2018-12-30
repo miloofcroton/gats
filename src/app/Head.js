@@ -10,23 +10,11 @@ const Head = ({ data }) => {
 
       <link
         rel="apple-touch-icon"
-        sizes="180x180"
-        href="/img/apple-touch-icon.png"
+        href="/logo/logo.png"
       />
-      <link
-        rel="icon"
-        type="image/png"
-        href="/img/favicon-32x32.png"
-        sizes="32x32"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        href="/img/favicon-16x16.png"
-        sizes="16x16"
-      />
+      <link rel="icon" href="/logo/favicon.ico"/>
 
-      <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ff4400" />
+      <link rel="mask-icon" href="/logo/logo.svg" color="#ff4400" />
       <meta name="theme-color" content="#fff" />
 
       <meta property="og:type" content="business.business" />
