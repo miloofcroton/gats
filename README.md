@@ -23,16 +23,15 @@
 ### To add
 
   - Redux?
-  - Jest
-  - Enzyme
   - [Flow](https://flow.org/en/docs/getting-started/)
   - material icons?
   - better configs
-    - eslint
-    - babel
-    - gitignore
-    - webpack
-    - gatsby
+    - ESlint
+    - Babel
+    - Webpack
+    - Gatsby
+    - Jest
+    - Enzyme
   - PWA config
 
 ### To remove

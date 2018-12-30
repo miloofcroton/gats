@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Header from '../Header.jsx';
+import Header from '../index.js';
 
 describe('<Header />', () => {
   test('renders', () => {

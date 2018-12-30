@@ -18,6 +18,7 @@ const AboutSection = styled.section`
   }
 `;
 
+// eslint-disable-next-line no-unused-vars
 const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
