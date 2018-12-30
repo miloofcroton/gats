@@ -12,7 +12,7 @@ const Statements = () => {
   return (
     <Fragment>
       <p>Copyright &copy; 2018. All rights reserved.</p>
-      <GithubLink href="https://github.com/miloofcroton/homepage">
+      <GithubLink href="https://github.com/miloofcroton/gatsby-homepage">
         This website
       </GithubLink>
       {' by '}
