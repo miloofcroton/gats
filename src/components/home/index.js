@@ -7,7 +7,7 @@ const HomeSection = styled.section`
   grid-template-columns: repeat(3, 1fr);
   flex-grow: 1;
   padding: 50px;
-  height: 100%;
+  height: 600px;
 
   @media (max-width: 700px) {
     grid-template-columns: 1fr;
