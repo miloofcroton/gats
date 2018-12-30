@@ -11,7 +11,8 @@
   "repository": { "type": "git", "url": "git+https://github.com/miloofcroton/gatsby-homepage.git" },
   "bugs": { "url": "https://github.com/miloofcroton/gatsby-homepage/issues" },
   "engines": {
-    "node": "10.10.0"
+    "node": "10.10.0",
+    "npm": "6.5.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.12",
