@@ -22,6 +22,7 @@
 
 ### To add
 
+  - Redux?
   - Jest
   - Enzyme
   - [Flow](https://flow.org/en/docs/getting-started/)
@@ -32,6 +33,7 @@
     - gitignore
     - webpack
     - gatsby
+  - PWA config
 
 ### To remove
 
