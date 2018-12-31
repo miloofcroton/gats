@@ -26,7 +26,7 @@
 ### To add
 
   - Redux?
-  - [Flow](https://flow.org/en/docs/getting-started/)?
+  - TypeScript?
   - material icons?
   - better configs
     - ESlint
@@ -38,5 +38,13 @@
 ### To remove
 
 - lodash
+
+## Bugs
+
+- getting double error messages for any ESLint issue, eg:
+  ```
+  [eslint] Missing semicolon. [semi] (19,2)
+  [eslint] Missing semicolon. [babel/semi] (19,2)
+  ```
 
 ## Notes
