@@ -1,4 +1,5 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import { withPrefix } from 'gatsby';
 import styled from 'styled-components';
 
 const IconImg = styled.img`
@@ -8,10 +9,12 @@ const IconImg = styled.img`
   display: inline-block;
 `;
 
+const techPath = withPrefix('/tech/');
+
 export const TechIcon = ({ tag }) => {
 
   const url = tag => {
-    return require('../../assets/tech/' + tag.toLowerCase() + '.png');
+    return techPath + tag.toLowerCase() + '.png';
   };
 
   return (

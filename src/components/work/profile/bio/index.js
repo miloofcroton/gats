@@ -21,13 +21,19 @@ const topText = 'I strive to work in no-ego, productive environments on projects
 
 const bottomText = 'A science and technology enthusiast, math inquisitor, competitive powerlifter, &amp; BJJ white belt, who loves camping and barbecuing, travels at random, does puzzles competitively, and follows football ardently.';
 
+
+// <p>{topText}</p>
+// <TechList />
+// <p>{bottomText}</p>
+// <ActivityList />
+
 const Bio = () => {
   return (
     <BioWrapper>
       <p>{topText}</p>
-      <TechList/>
+      <TechList />
       <p>{bottomText}</p>
-      <ActivityList/>
+      <ActivityList />
     </BioWrapper>
   );
 };

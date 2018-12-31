@@ -16,7 +16,7 @@ const PlayPost = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Play">
+          <Helmet titleTemplate="Play | %s">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
