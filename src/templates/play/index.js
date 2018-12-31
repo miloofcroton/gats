@@ -39,7 +39,7 @@ PlayPost.propTypes = {
 
 export default PlayPost;
 
-export const pageQuery = graphql`
+export const playPageQuery = graphql`
   query PlayPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id

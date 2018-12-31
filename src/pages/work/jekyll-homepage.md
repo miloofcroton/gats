@@ -2,10 +2,10 @@
 templateKey: work
 title: Jekyll Homepage
 date: 2018-01-10T15:04:10.000Z
-summary: Professional homepage built as a SPA using Jekyll and Google Earth images
+description: Professional homepage built as a SPA using Jekyll and Google Earth images
 github: https://github.com/miloofcroton/miloofcroton.github.io
 live: http://toumey.io/
-tech:
+tags:
   - Jekyll
   - Ruby
   - Javascript

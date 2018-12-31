@@ -2,10 +2,10 @@
 templateKey: work
 title: Cryptokeeper
 date: 2018-10-28T15:04:10.000Z
-summary: A multi-user cryptocurrency exchange simulator
+description: A multi-user cryptocurrency exchange simulator
 github: https://github.com/DefinitelyNotRobots/cryptokeeper-server
 live: https://peaceful-springs-50309.herokuapp.com/
-tech:
+tags:
   - Node
   - Javascript
   - HTML

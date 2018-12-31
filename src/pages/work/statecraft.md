@@ -2,10 +2,10 @@
 templateKey: work
 title: Statecraft
 date: 2018-08-17T15:04:10.000Z
-summary: A fun political sandbox game using Vanilla JS
+description: A fun political sandbox game using Vanilla JS
 github: 'https://github.com/Team-Knockout/state-craft'
 live: 'https://team-knockout.github.io/state-craft/'
-tech:
+tags:
   - Javascript
   - HTML
   - CSS

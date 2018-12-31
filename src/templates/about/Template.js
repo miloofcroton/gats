@@ -4,7 +4,7 @@ import Content from '../../styles/Content';
 
 import styled from 'styled-components';
 
-import Greeting from './Greeting';
+import Greeting from '../../components/about/Greeting';
 
 const AboutSection = styled.section`
   span {

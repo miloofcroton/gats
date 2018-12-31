@@ -3,36 +3,60 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import App from '../../app';
-import styled from 'styled-components';
+import { HTMLContent } from '../../styles/Content';
+import WorkPostTemplate from './Template';
 
-// import Profile from './profile';
-// import Projects from './projects';
+const WorkPost = ({ data }) => {
+  const { markdownRemark: post } = data;
 
-const WorkWrapper = styled.section`
-  display: grid;
-  grid-template-columns: 70% 30%;
-  margin-top: 20px;
-  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
-  max-height: 1000px;
-
-  @media (max-width: 700px) {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-`;
-
-const Work = () => {
-  // <Projects/>
-  // <Profile/>
   return (
     <App>
-      <WorkWrapper>
+      <WorkPostTemplate
 
-        <h2>Work is under development!</h2>
+        helmet={
+          <Helmet titleTemplate="%s | Thoughts">
+            <title>{`${post.frontmatter.title}`}</title>
+            <meta
+              name="description"
+              content={`${post.frontmatter.description}`}
+            />
+          </Helmet>
+        }
 
-      </WorkWrapper>
+        content={post.html}
+        contentComponent={HTMLContent}
+        description={post.frontmatter.description}
+        date={post.frontmatter.date}
+        tags={post.frontmatter.tags}
+        title={post.frontmatter.title}
+        live={post.frontmatter.live}
+        github={post.frontmatter.github}
+      />
     </App>
   );
 };
 
-export default Work;
+WorkPost.propTypes = {
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.object,
+  }),
+};
+
+export default WorkPost;
+
+export const workPageQuery = graphql`
+  query WorkPostByID($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      id
+      html
+      frontmatter {
+        title
+        date(formatString: "MMMM DD, YYYY")
+        description
+        tags
+        github
+        live
+      }
+    }
+  }
+`;

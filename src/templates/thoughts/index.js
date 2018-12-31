@@ -39,7 +39,7 @@ ThoughtsPost.propTypes = {
 
 export default ThoughtsPost;
 
-export const pageQuery = graphql`
+export const thoughtsPageQuery = graphql`
   query ThoughtsPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id

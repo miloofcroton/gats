@@ -29,8 +29,8 @@ class TagRoute extends PureComponent {
 
     return (
       <App>
+        <Helmet title={`${tag} | ${title}`} />
         <section>
-          <Helmet title={`${tag} | ${title}`} />
           <TagDiv>
             <h3>{tagHeader}</h3>
             <StyledList>{postLinks}</StyledList>

@@ -5,8 +5,8 @@ import WorkPostTemplate from '../../templates/work/Template';
 const WorkPostPreview = ({ entry, widgetFor }) => (
   <WorkPostTemplate
     content={widgetFor('body')}
-    summary={entry.getIn(['data', 'summary'])}
-    tech={entry.getIn(['data', 'tech'])}
+    description={entry.getIn(['data', 'description'])}
+    tags={entry.getIn(['data', 'tags'])}
     title={entry.getIn(['data', 'title'])}
   />
 );

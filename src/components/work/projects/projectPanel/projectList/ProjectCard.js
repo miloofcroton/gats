@@ -31,7 +31,7 @@ const ProjectCard = ({ project, selected, onSelect }) => {
       onClick={handleClick}
     >
       <span>{project.title}</span>
-      <p>{project.summary}</p>
+      <p>{project.description}</p>
     </ProjectCardWrapper>
   );
 
