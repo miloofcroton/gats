@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import { navigate } from 'gatsby-link';
 import App from '../../app';
 
@@ -8,7 +8,7 @@ function encode(data) {
     .join('&');
 }
 
-export default class Index extends React.Component {
+export default class Index extends PureComponent {
   constructor(props) {
     super(props);
     this.state = { isValidated: false };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import Helmet from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import App from '../../app';
@@ -10,7 +10,7 @@ const TagDiv = styled.div`
   margin-bottom: 6rem;
 `;
 
-class TagRoute extends React.Component {
+class TagRoute extends PureComponent {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges;
     const postLinks = posts.map(post => (

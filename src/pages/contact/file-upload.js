@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import { navigate } from 'gatsby-link';
 import App from '../../app';
 
@@ -13,7 +13,7 @@ function encode(data) {
   // return formData;
 }
 
-export default class Contact extends React.Component {
+export default class Contact extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {};

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import Link from 'gatsby-link';
 import App from '../../app';
 
-export default class Index extends React.Component {
+export default class Index extends PureComponent {
   render() {
     return (
       <App>
