@@ -5,22 +5,30 @@ import styled from 'styled-components';
 const PlayTile = styled.div`
   border: 1px solid #333;
   padding: 2em 4em;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    h3 {
+      text-decoration: underline;
+    }
+    small {
+      display: block;
+    }
+  }
 `;
 
 const Preview = ({ post }) => {
   return (
     <PlayTile>
-      <p>
-        <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
-        <span> &bull; </span>
+      <Link to={post.fields.slug}>
+        <h3>{post.frontmatter.title}</h3>
         <small>{post.frontmatter.date}</small>
-      </p>
+        <img src={post.frontmatter.image.childImageSharp.fixed.src}/>
+      </Link>
 
-      <p>
-        {post.excerpt}
-        <br /> <br />
-        <Link to={post.fields.slug}>Keep Reading →</Link>
-      </p>
+      <p>{post.excerpt}</p>
     </PlayTile>
   );
 };
