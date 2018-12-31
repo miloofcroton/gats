@@ -1,5 +1,5 @@
 ---
-templateKey: thoughts
+templateKey: work
 title: Cryptokeeper
 date: 2018-10-28T15:04:10.000Z
 summary: A multi-user cryptocurrency exchange simulator

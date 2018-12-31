@@ -1,5 +1,5 @@
 ---
-templateKey: thoughts
+templateKey: work
 title: Statecraft
 date: 2018-08-17T15:04:10.000Z
 summary: A fun political sandbox game using Vanilla JS

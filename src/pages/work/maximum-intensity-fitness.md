@@ -1,5 +1,5 @@
 ---
-templateKey: thoughts
+templateKey: work
 title: Maximum Intensity Fitness
 date: 2018-01-10T15:04:10.000Z
 summary: A workout tracker built using Vue
