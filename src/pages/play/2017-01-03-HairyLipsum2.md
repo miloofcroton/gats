@@ -1,6 +1,7 @@
 ---
 templateKey: play
 title: HairyIpsum2
+image: /img/chemex.jpg
 date: 2017-01-03T15:04:10.000Z
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 tags:

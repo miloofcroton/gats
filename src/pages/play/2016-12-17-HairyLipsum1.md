@@ -1,6 +1,7 @@
 ---
 templateKey: play
 title: HairyLipsum1
+image: /img/flavor_wheel.jpg
 date: 2016-12-17T15:04:10.000Z
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 tags:

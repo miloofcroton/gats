@@ -1,6 +1,7 @@
 ---
 templateKey: play
 title: HairyLipsum3
+image: /img/products-grid1.jpg
 date: 2017-01-04T15:04:10.000Z
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -9,6 +10,8 @@ tags:
   - beard
   - are you reading this
 ---
+
+![coffee gear](/img/products-grid1.jpg)
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
