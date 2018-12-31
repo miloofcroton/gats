@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import App from '../../app';
-import { HTMLContent } from '../../components/Content';
+import { HTMLContent } from '../../styles/Content';
 import BlogPostTemplate from './Template';
 
 const BlogPost = ({ data }) => {

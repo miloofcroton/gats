@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { kebabCase } from 'lodash';
 import { Link } from 'gatsby';
-import Content from '../../components/Content';
+import Content from '../../styles/Content';
 import { StyledList } from '../../styles/Lists';
 import styled from 'styled-components';
 

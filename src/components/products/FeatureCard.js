@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
+import PreviewCompatibleImage from './PreviewCompatibleImage';
 import styled from 'styled-components';
 
 const PreviewCard = styled.div`
@@ -8,7 +8,7 @@ const PreviewCard = styled.div`
   display: inline-block;
 `;
 
-const FeatureGrid = ({ item }) => (
+const FeatureCard = ({ item }) => (
   <section>
     <PreviewCard>
       <PreviewCompatibleImage imageInfo={item} />
@@ -17,11 +17,11 @@ const FeatureGrid = ({ item }) => (
   </section>
 );
 
-FeatureGrid.propTypes = {
+FeatureCard.propTypes = {
   item: PropTypes.shape({
     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     text: PropTypes.string,
   })
 };
 
-export default FeatureGrid;
+export default FeatureCard;

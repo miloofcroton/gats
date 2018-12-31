@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import FeatureGrid from '../../components/FeatureGrid';
-import Testimonials from '../../components/Testimonials';
-import Pricing from '../../components/Pricing';
-import PreviewCompatibleImage from '../../components/PreviewCompatibleImage';
+import FeatureGrid from '../../components/products/FeatureGrid';
+import Testimonials from '../../components/products/Testimonials';
+import Pricing from '../../components/products/Pricing';
+import PreviewCompatibleImage from '../../components/products/PreviewCompatibleImage';
 
 
 import styled from 'styled-components';

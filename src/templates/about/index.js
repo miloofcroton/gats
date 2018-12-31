@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import App from '../../app';
-import { HTMLContent } from '../../components/Content';
+import { HTMLContent } from '../../styles/Content';
 
 import AboutPageTemplate from './Template';
 

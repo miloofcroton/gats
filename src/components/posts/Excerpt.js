@@ -7,7 +7,7 @@ const PostTile = styled.div`
   padding: 2em 4em;
 `;
 
-const FrontPagePost = ({ post }) => {
+const Excerpt = ({ post }) => {
   return (
     <PostTile>
       <p>
@@ -25,4 +25,4 @@ const FrontPagePost = ({ post }) => {
   );
 };
 
-export default FrontPagePost;
+export default Excerpt;

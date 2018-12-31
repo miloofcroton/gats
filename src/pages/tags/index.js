@@ -10,6 +10,22 @@ const TagDiv = styled.div`
   margin-bottom: 6rem;
 `;
 
+export const tagPageQuery = graphql`
+  query TagsQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(limit: 1000) {
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
+      }
+    }
+  }
+`;
+
 const TagsPage = ({
   data: {
     allMarkdownRemark: { group },
@@ -38,19 +54,3 @@ const TagsPage = ({
 );
 
 export default TagsPage;
-
-export const tagPageQuery = graphql`
-  query TagsQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(limit: 1000) {
-      group(field: frontmatter___tags) {
-        fieldValue
-        totalCount
-      }
-    }
-  }
-`;
