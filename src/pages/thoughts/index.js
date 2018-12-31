@@ -2,18 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import App from '../../app';
-import Preview from '../../components/thoughts/Preview';
+import PreviewList from '../../components/thoughts/preview/List';
 
 const ThoughtsIndex = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;
 
   return (
     <App>
-      <h1>Latest Stories</h1>
-
-      {posts.map(({ node: post }) => (
-        <Preview key={post.id} post={post} />
-      ))}
+      <h1>Latest Thoughts</h1>
+      <PreviewList posts={posts}/>
     </App>
   );
 };
