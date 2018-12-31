@@ -3,7 +3,7 @@ import Head from './Head';
 import Header from './header';
 import Footer from './footer';
 import { ThemeProvider } from 'styled-components';
-import { theme, GlobalStyle } from './Globals';
+import { theme, Globals } from './imports/style';
 
 import Data from './Data';
 
@@ -16,7 +16,7 @@ const App = ({ data, children }) => {
     <ThemeProvider theme={theme}>
       <Fragment>
         <Head data={data} />
-        <GlobalStyle />
+        <Globals />
         <Header />
         {children}
         <Footer />

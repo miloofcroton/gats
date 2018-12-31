@@ -12,6 +12,7 @@
   - [react-helmet](https://github.com/nfl/react-helmet)
   - [font-awesome](https://github.com/FortAwesome/Font-Awesome)
   - [prop-types](https://github.com/facebook/prop-types)
+  - PWA config
 - Systems
   - [Netlify](https://www.netlify.com/docs/)
   - [Travis CI](https://travis-ci.com/)
@@ -35,11 +36,14 @@
     - Babel
     - Webpack
     - Gatsby
-  - PWA config
 
 ### To remove
 
 - lodash
+
+## To improve
+
+- make the importing of fontAwesome in the App component conditional (no need to load fontawesome all over the website if it's only used in a few places), or import it just in specific files that use it
 
 ## Bugs
 

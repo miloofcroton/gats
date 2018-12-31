@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyle = createGlobalStyle`
+export const Globals = createGlobalStyle`
 
   @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono');
 
