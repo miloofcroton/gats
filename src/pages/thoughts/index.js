@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import App from '../../app';
-import Excerpt from '../../components/posts/Excerpt';
+import Preview from '../../components/thoughts/Preview';
 
-const PostsPage = ({ data }) => {
+const ThoughtsPage = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;
 
   return (
@@ -12,13 +12,13 @@ const PostsPage = ({ data }) => {
       <h1>Latest Stories</h1>
 
       {posts.map(({ node: post }) => (
-        <Excerpt key={post.id} post={post} />
+        <Preview key={post.id} post={post} />
       ))}
     </App>
   );
-}
+};
 
-PostsPage.propTypes = {
+ThoughtsPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -26,13 +26,13 @@ PostsPage.propTypes = {
   }),
 };
 
-export default PostsPage;
+export default ThoughtsPage;
 
 export const pageQuery = graphql`
-  query PostsQuery {
+  query ThoughtsQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { templateKey: { eq: "blog" } } }
+      filter: { frontmatter: { templateKey: { eq: "thoughts" } } }
     ) {
       edges {
         node {

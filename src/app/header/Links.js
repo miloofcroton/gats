@@ -11,8 +11,8 @@ const ROUTES = [
     label: 'About',
   },
   {
-    href: '/posts',
-    label: 'Blog',
+    href: '/thoughts',
+    label: 'Thoughts',
   },
   {
     href: '/products',

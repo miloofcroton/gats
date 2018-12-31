@@ -10,7 +10,7 @@ const TagDiv = styled.div`
   margin-top: 4rem;
 `;
 
-const BlogPostTemplate = ({
+const ThoughtsPostTemplate = ({
   content,
   contentComponent,
   description,
@@ -42,7 +42,7 @@ const BlogPostTemplate = ({
   );
 };
 
-BlogPostTemplate.propTypes = {
+ThoughtsPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -50,4 +50,4 @@ BlogPostTemplate.propTypes = {
   helmet: PropTypes.object,
 };
 
-export default BlogPostTemplate;
+export default ThoughtsPostTemplate;

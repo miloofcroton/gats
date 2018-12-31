@@ -4,19 +4,19 @@ import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import App from '../../app';
 import { HTMLContent } from '../../styles/Content';
-import BlogPostTemplate from './Template';
+import ThoughtsPostTemplate from './Template';
 
-const BlogPost = ({ data }) => {
+const ThoughtsPost = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
     <App>
-      <BlogPostTemplate
+      <ThoughtsPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
+          <Helmet titleTemplate="%s | Thoughts">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
@@ -31,16 +31,16 @@ const BlogPost = ({ data }) => {
   );
 };
 
-BlogPost.propTypes = {
+ThoughtsPost.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 };
 
-export default BlogPost;
+export default ThoughtsPost;
 
 export const pageQuery = graphql`
-  query BlogPostByID($id: String!) {
+  query ThoughtsPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html

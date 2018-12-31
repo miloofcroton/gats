@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-const PostTile = styled.div`
+const PlayTile = styled.div`
   border: 1px solid #333;
   padding: 2em 4em;
 `;
 
-const Excerpt = ({ post }) => {
+const Preview = ({ post }) => {
   return (
-    <PostTile>
+    <PlayTile>
       <p>
         <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
         <span> &bull; </span>
@@ -21,8 +21,8 @@ const Excerpt = ({ post }) => {
         <br /> <br />
         <Link to={post.fields.slug}>Keep Reading →</Link>
       </p>
-    </PostTile>
+    </PlayTile>
   );
 };
 
-export default Excerpt;
+export default Preview;
