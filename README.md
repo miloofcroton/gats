@@ -121,4 +121,10 @@ query {
 }
 ```
 
-You can explore your available data after updating the data/content portions of your full slice. This would include the yml and markdown files, at minimum. (Still need to test if anything else is required)
+You can explore your available data after updating the data/content portions of your full slice. This would include the yml and markdown files, at minimum. (Still need to test if anything else is required).
+
+The GraphiQL browser is _super_ helpful with seeing available fields for a query.
+
+### Working with images
+
+To rehash the above discussion of GraphQL, but specifically with the gatsby image plugin (even though GraphiQL makes it kinda self-documenting), see here: https://www.gatsbyjs.org/docs/working-with-images/
