@@ -13,3 +13,10 @@ The *Play* section is for me to upload cool pics from my travels, cooking failur
 
 ### Thoughts
 The *Thoughts* section is for me to publish my ideas on a wide range of things, technical mostly but perhaps some non-technical things too. It shows a most recent section for my posts on load, but you can also drill into a hierarchy that I created for these posts because I love hierarchies.
+
+
+#### Demo content (to remove)
+
+[products](/products)
+[contact](/contact)
+[form examples](/contact/examples)

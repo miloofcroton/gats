@@ -10,26 +10,14 @@ const ROUTES = [
     href: '/about',
     label: 'About',
   },
-  {
-    href: '/play',
-    label: 'Play',
-  },
-  {
-    href: '/thoughts',
-    label: 'Thoughts',
-  },
-  {
-    href: '/products',
-    label: 'Products',
-  },
-  {
-    href: '/contact',
-    label: 'Contact',
-  },
-  {
-    href: '/contact/examples',
-    label: 'Form Examples',
-  },
+  // {
+  //   href: '/play',
+  //   label: 'Play',
+  // },
+  // {
+  //   href: '/thoughts',
+  //   label: 'Thoughts',
+  // },
 ];
 
 const NavLinks = () => {
