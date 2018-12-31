@@ -4,7 +4,8 @@ import styled from 'styled-components';
 
 const PreviewCardWrapper = styled.div`
   border: 1px solid #333;
-  padding: 2em 4em;
+  padding: 1em;
+  margin: 1em;
 
   a {
     text-decoration: none;
