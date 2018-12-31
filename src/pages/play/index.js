@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import App from '../../app';
-import Preview from '../../components/thoughts/Preview';
+import Preview from '../../components/play/Preview';
 
-const ThoughtsIndex = ({ data }) => {
+const PlayIndex = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;
 
   return (
@@ -16,9 +16,9 @@ const ThoughtsIndex = ({ data }) => {
       ))}
     </App>
   );
-};
+}
 
-ThoughtsIndex.propTypes = {
+PlayIndex.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -26,13 +26,13 @@ ThoughtsIndex.propTypes = {
   }),
 };
 
-export default ThoughtsIndex;
+export default PlayIndex;
 
 export const pageQuery = graphql`
-  query ThoughtsIndexQuery {
+  query PlayIndexQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { templateKey: { eq: "thoughts" } } }
+      filter: { frontmatter: { templateKey: { eq: "play" } } }
     ) {
       edges {
         node {

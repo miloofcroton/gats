@@ -11,6 +11,10 @@ const ROUTES = [
     label: 'About',
   },
   {
+    href: '/play',
+    label: 'Play',
+  },
+  {
     href: '/thoughts',
     label: 'Thoughts',
   },

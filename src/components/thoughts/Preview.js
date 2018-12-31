@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-const PostTile = styled.div`
+const ThoughtsTile = styled.div`
   border: 1px solid #333;
   padding: 2em 4em;
 `;
 
 const Preview = ({ post }) => {
   return (
-    <PostTile>
+    <ThoughtsTile>
       <p>
         <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
         <span> &bull; </span>
@@ -21,7 +21,7 @@ const Preview = ({ post }) => {
         <br /> <br />
         <Link to={post.fields.slug}>Keep Reading →</Link>
       </p>
-    </PostTile>
+    </ThoughtsTile>
   );
 };
 
