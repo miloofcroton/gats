@@ -44,6 +44,9 @@
 ## To improve
 
 - make the importing of fontAwesome in the App component conditional (no need to load fontawesome all over the website if it's only used in a few places), or import it just in specific files that use it
+- Helmet
+  - might need to remove some stuff in my Helmet, particularly the favicon stuff as it pertains to what my PWA plugins are doing
+  - should add it to all my templates, so I get nice page titles everywhere
 
 ## Bugs
 
@@ -134,3 +137,7 @@ The GraphiQL browser is _super_ helpful with seeing available fields for a query
 ### Working with images
 
 To rehash the above discussion of GraphQL, but specifically with the gatsby image plugin (even though GraphiQL makes it kinda self-documenting), see here: https://www.gatsbyjs.org/docs/working-with-images/
+
+### Adding content
+
+I'll flesh this out more in the future. For starters, I want to leave myself a link to the Netlify CMS widgets: https://www.netlifycms.org/docs/widgets/
