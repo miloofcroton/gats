@@ -17,7 +17,7 @@ export default class Logo extends PureComponent {
 
   render() {
     return (
-      <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0">
+      <a href="https://www.youtube.com/watch?v=kvDMlk3kSYg">
         <LogoWrapper
           alt="logo"
           src={defaultLogo}
