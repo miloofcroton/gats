@@ -27,6 +27,8 @@
 
   - Redux?
   - TypeScript?
+  - Storybook?
+  - Cypress?
   - material icons?
   - better configs
     - ESlint
