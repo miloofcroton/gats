@@ -16,7 +16,7 @@ const PlayIndex = ({ data }) => {
       ))}
     </App>
   );
-}
+};
 
 PlayIndex.propTypes = {
   data: PropTypes.shape({
