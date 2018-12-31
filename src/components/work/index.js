@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import styled from 'styled-components';
 
 import Profile from './profile';
-// import Projects from './projects';
+import Projects from './projects';
 
 const WorkWrapper = styled.section`
   display: grid;
@@ -19,10 +19,16 @@ const WorkWrapper = styled.section`
   }
 `;
 
-const Work = ({ children }) => {
+const Work = ({ children, data }) => {
+  // const { edges: posts } = data.allMarkdownRemark;
+
   return (
     <WorkWrapper>
-      {children}
+      <Projects
+
+      >
+        {children}
+      </Projects>
       <Profile/>
     </WorkWrapper>
   );
@@ -31,7 +37,7 @@ const Work = ({ children }) => {
 export default Work;
 
 export const pageQuery = graphql`
-  query WorkMainQuery {
+  query WorkIndexQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { templateKey: { eq: "work" } } }

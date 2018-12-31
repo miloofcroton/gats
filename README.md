@@ -43,6 +43,7 @@
 
 ## To improve
 
+- make the profile in the work view be the result of compiled markdown
 - make the importing of fontAwesome in the App component conditional (no need to load fontawesome all over the website if it's only used in a few places), or import it just in specific files that use it
 - Helmet
   - might need to remove some stuff in my Helmet, particularly the favicon stuff as it pertains to what my PWA plugins are doing

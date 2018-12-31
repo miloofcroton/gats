@@ -31,7 +31,7 @@ const Work = () => {
 export default Work;
 
 export const pageQuery = graphql`
-  query WorkIndexQuery {
+  query WorkMainQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { templateKey: { eq: "work" } } }
