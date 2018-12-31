@@ -18,36 +18,6 @@ exports[`<Header /> renders 1`] = `
     >
       About
     </Styled(mockConstructor)>
-    <Styled(mockConstructor)
-      key="2"
-      to="/play"
-    >
-      Play
-    </Styled(mockConstructor)>
-    <Styled(mockConstructor)
-      key="3"
-      to="/thoughts"
-    >
-      Thoughts
-    </Styled(mockConstructor)>
-    <Styled(mockConstructor)
-      key="4"
-      to="/products"
-    >
-      Products
-    </Styled(mockConstructor)>
-    <Styled(mockConstructor)
-      key="5"
-      to="/contact"
-    >
-      Contact
-    </Styled(mockConstructor)>
-    <Styled(mockConstructor)
-      key="6"
-      to="/contact/examples"
-    >
-      Form Examples
-    </Styled(mockConstructor)>
   </styled.nav>
 </header>
 `;
