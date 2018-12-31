@@ -48,3 +48,77 @@
   ```
 
 ## Notes
+
+### Full slice:
+
+- (optional) add links or references to your new page, potentially in the app/header/links component
+- add preview data in cms/index and cms/preview-templates
+- add a new directory in components for resource name
+  - at minimum, adding a preview component is a good idea if you're going to list them on an index page later
+- add a new directory in pages for resource name
+  - add an index.js file to show previews or whatever you want
+  - add a bunch of markdown files for your content
+- add a directory in templates for resource name
+  - at minimum, have an index.js that exposes a template for your markdown files
+- add to static/admin/config.yml with data about your markdown files
+- (optional helpers)
+  - extract anything you want out to styles folder
+  - add any assets to static folder (or something else, potentially)
+  - install any necessary npm packages
+- (conditional)
+  - if your content deviates significantly from the other types, you may have to adjust lower level settings too, such as in the `gatsby-config.js`
+
+### Developing with GraphQL
+
+There's a lot Gatsby is doing for you under the hood. Some example queries are already running. To test these out, go to http://localhost:8080/___graphql (replace 8080 with a different port if your dev server is using something else) and run your queries there. For instance, the page query for one page in the app is:
+
+```
+    allMarkdownRemark(
+    sort: { order: DESC, fields: [frontmatter___date] }
+    filter: { frontmatter: { templateKey: { eq: "play" } } }
+  ) {
+    edges {
+      node {
+        excerpt(pruneLength: 400)
+        id
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          templateKey
+          date(formatString: "MMMM DD, YYYY")
+        }
+      }
+    }
+  }
+```
+
+All you have to do is add `query { }` around that like so:
+
+
+```
+query {
+    allMarkdownRemark(
+    sort: { order: DESC, fields: [frontmatter___date] }
+    filter: { frontmatter: { templateKey: { eq: "play" } } }
+  ) {
+    edges {
+      node {
+        excerpt(pruneLength: 400)
+        id
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          templateKey
+          date(formatString: "MMMM DD, YYYY")
+        }
+      }
+    }
+  }
+}
+```
+
+You can explore your available data after updating the data/content portions of your full slice. This would include the yml and markdown files, at minimum. (Still need to test if anything else is required)
