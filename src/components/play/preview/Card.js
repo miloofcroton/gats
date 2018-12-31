@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-const PlayTile = styled.div`
+const PreviewCardWrapper = styled.div`
   border: 1px solid #333;
   padding: 2em 4em;
 
@@ -19,18 +19,18 @@ const PlayTile = styled.div`
   }
 `;
 
-const Preview = ({ post }) => {
+const PreviewCard = ({ post }) => {
   return (
-    <PlayTile>
+    <PreviewCardWrapper>
       <Link to={post.fields.slug}>
         <h3>{post.frontmatter.title}</h3>
         <small>{post.frontmatter.date}</small>
-        <img src={post.frontmatter.image.childImageSharp.fixed.src}/>
+        <img src={post.frontmatter.image.childImageSharp.fixed.src} />
       </Link>
 
       <p>{post.excerpt}</p>
-    </PlayTile>
+    </PreviewCardWrapper>
   );
 };
 
-export default Preview;
+export default PreviewCard;
