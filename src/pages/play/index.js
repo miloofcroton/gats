@@ -1,4 +1,5 @@
 import React from 'react';
+import PageHelmet from '../../styles/PageHelmet';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import App from '../../app';
@@ -9,6 +10,7 @@ const PlayIndex = ({ data }) => {
 
   return (
     <App>
+      <PageHelmet title='Work' />
       <h1>Latest Goings-on</h1>
       <PreviewGrid posts={posts} />
     </App>

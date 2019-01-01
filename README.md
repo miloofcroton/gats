@@ -56,7 +56,6 @@
   - look around for more components to clean up
 - Helmet
   - might need to remove some stuff in my Helmet, particularly the favicon stuff as it pertains to what my PWA plugins are doing
-  - should add it to all my templates, so I get nice page titles everywhere
 - remove example content
 - fix how Netlify CMS is saving content
 - add some more simple sections, such as a contact form?

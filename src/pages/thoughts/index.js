@@ -1,4 +1,5 @@
 import React from 'react';
+import PageHelmet from '../../styles/PageHelmet';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import App from '../../app';
@@ -9,6 +10,7 @@ const ThoughtsIndex = ({ data }) => {
 
   return (
     <App>
+      <PageHelmet title='Thoughts' />
       <h1>Latest Thoughts</h1>
       <PreviewList posts={posts}/>
     </App>
