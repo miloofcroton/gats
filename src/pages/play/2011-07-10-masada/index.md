@@ -1,7 +1,7 @@
 ---
 templateKey: play
 title: Visit to Masada
-image: me_and_kirsten.jpg
+image: me-and-kirsten.jpg
 date: 2011-07-10T15:04:10.000Z
 description: Me and Kirsten
 tags:

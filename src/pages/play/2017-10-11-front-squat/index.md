@@ -1,7 +1,7 @@
 ---
 templateKey: play
 title: Front Squat
-image: front_squat.jpg
+image: front-squat.jpg
 date: 2017-10-11T15:04:10.000Z
 description: Warm up weight...
 tags:

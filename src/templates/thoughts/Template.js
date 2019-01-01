@@ -8,6 +8,21 @@ import styled from 'styled-components';
 
 const TagDiv = styled.div`
   margin-top: 4rem;
+
+  ul {
+    width: auto;
+    display: inline-block;
+    li {
+      display: inline;
+    }
+  }
+`;
+
+const MainContent = styled.div`
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 `;
 
 const ThoughtsPostTemplate = ({
@@ -24,8 +39,12 @@ const ThoughtsPostTemplate = ({
     <section>
       {helmet || ''}
       <h1>{title}</h1>
-      <p>{description}</p>
-      <PostContent content={content} />
+      <small>{description}</small>
+
+      <MainContent>
+        <PostContent content={content} />
+      </MainContent>
+
       {tags && tags.length ? (
         <TagDiv>
           <h4>Tags</h4>
