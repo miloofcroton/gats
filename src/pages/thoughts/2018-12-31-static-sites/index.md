@@ -18,4 +18,4 @@ No, not that Gatsby. This Gatsby.
 
 There we go.
 
-I'm going to come back and talk more about some of the lessons that I learned while writing this website. It's funny; I wish for so long that you had a cool website to write your thoughts for, but then you have the website, and you're suddenly too tired and done with it.
+I'm going to come back and talk more about some of the lessons that I learned while writing this website. It's funny; you wish for so long that you have a cool website to write your thoughts for, but then you have the website, and you're suddenly too tired and done with it.
