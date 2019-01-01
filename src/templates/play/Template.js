@@ -10,8 +10,13 @@ import Img from 'gatsby-image';
 
 const PostImg = styled(Img)`
   border-radius: '5px';
-  width: 50%;
-  margin: 0 auto;
+`;
+
+const MainContent = styled.div`
+  border-radius: '5px';
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 const TagDiv = styled.div`
@@ -42,8 +47,10 @@ const PlaysPostTemplate = ({
       {helmet || ''}
       <h1>{title}</h1>
       <p>{description}</p>
-      <PostImg fluid={image.childImageSharp.fluid} alt={title} />
-      <PostContent content={content} />
+      <MainContent>
+        <PostImg fluid={image.childImageSharp.fluid} alt={title} />
+        <PostContent content={content} />
+      </MainContent>
       {tags && tags.length ? (
         <TagDiv>
           <h4>Tags</h4>
