@@ -45,12 +45,21 @@
 
 - make the work app read and write to url/history
   - might have to move work post pages to different directory in /pages, so I can write to `/pages/<project name>` without conflicting with that actual page on the site, which isn't in the work app
+- add menu, search tool, tag list, and categories to 'thoughts' index view
 - make the work app muuuuuch more mobile-friendly
 - make the profile in the work view be the result of compiled markdown
 - make the importing of fontAwesome in the App component conditional (no need to load fontawesome all over the website if it's only used in a few places), or import it just in specific files that use it
+- create more reusable components
+  - tag style
+  - tech/image icon? (or just put those images *in* the bio page directory!)
+  - font-awesome? how to call that from markdown? (import in the template, and the dangerously-inserted html will 'just work' with stuff on that page? or does call site matter?)
+  - look around for more components to clean up
 - Helmet
   - might need to remove some stuff in my Helmet, particularly the favicon stuff as it pertains to what my PWA plugins are doing
   - should add it to all my templates, so I get nice page titles everywhere
+- remove example content
+- add some more simple sections, such as a contact form?
+- add more content... duh
 
 ## Bugs
 
