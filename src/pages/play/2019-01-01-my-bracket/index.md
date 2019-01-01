@@ -1,13 +1,14 @@
 ---
 templateKey: play
 title: My Bracket
-image: /img/screenshot-from-2019-01-01-11-57-47.png
+image: bracket.png
 date: 2019-01-01T19:58:34.813Z
 description: No bias at all...
 tags:
-  - football sports
+  - football
+  - sports
 ---
-Definitely some close calls in there. 
+Definitely some close calls in there.
 
 I like the Colts as a sleeper. They have a deep DL and a great, diverse passing offense. Kind of reminds me of the Giants of about 10 years ago. If the Texans can get by them though, I also think they can go far. The Pats are as solid as ever, but ironically some of the offensive guys are aging faster than Brady. I think they're just out of weapons, offensively and defensively. I like the Chiefs, but I think the lack of defense makes them too one-dimensional.
 
