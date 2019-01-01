@@ -8,6 +8,13 @@ import styled from 'styled-components';
 
 const TagDiv = styled.div`
   margin-bottom: 6rem;
+  ul {
+    width: auto;
+    display: inline-block;
+    li {
+      display: inline;
+    }
+  }
 `;
 
 export const tagPageQuery = graphql`

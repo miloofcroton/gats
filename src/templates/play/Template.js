@@ -6,8 +6,24 @@ import Content from '../../styles/Content';
 import { StyledList } from '../../styles/Lists';
 import styled from 'styled-components';
 
+import Img from 'gatsby-image';
+
+const PostImg = styled(Img)`
+  border-radius: '5px';
+  width: 50%;
+  margin: 0 auto;
+`;
+
 const TagDiv = styled.div`
-  margin-top: 4rem;
+  margin: 4rem auto;
+
+  ul {
+    width: auto;
+    display: inline-block;
+    li {
+      display: inline;
+    }
+  }
 `;
 
 const PlaysPostTemplate = ({
@@ -16,6 +32,7 @@ const PlaysPostTemplate = ({
   description,
   tags,
   title,
+  image,
   helmet,
 }) => {
   const PostContent = contentComponent || Content;
@@ -25,6 +42,7 @@ const PlaysPostTemplate = ({
       {helmet || ''}
       <h1>{title}</h1>
       <p>{description}</p>
+      <PostImg fluid={image.childImageSharp.fluid} alt={title} />
       <PostContent content={content} />
       {tags && tags.length ? (
         <TagDiv>

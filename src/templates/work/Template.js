@@ -8,6 +8,14 @@ import styled from 'styled-components';
 
 const TagDiv = styled.div`
   margin-top: 4rem;
+
+  ul {
+    width: auto;
+    display: inline-block;
+    li {
+      display: inline;
+    }
+  }
 `;
 
 const WorkPostWrapper = styled.section`

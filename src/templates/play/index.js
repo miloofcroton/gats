@@ -26,6 +26,7 @@ const PlayPost = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        image={post.frontmatter.image}
       />
     </App>
   );
@@ -47,6 +48,14 @@ export const playPageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
+        image {
+          id
+          childImageSharp {
+            fluid (quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         description
         tags
       }
