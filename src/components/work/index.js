@@ -42,6 +42,8 @@ const Work = ({ pathname }) => {
                   description
                   tags
                   date
+                  github
+                  live
                 }
               }
             }
@@ -55,6 +57,8 @@ const Work = ({ pathname }) => {
           title: post.node.frontmatter.title,
           date: post.node.frontmatter.date,
           tags: post.node.frontmatter.tags,
+          github: post.node.frontmatter.github,
+          live: post.node.frontmatter.live,
           description: post.node.frontmatter.description,
           content: post.node.html,
           link: post.node.fields.slug,
