@@ -43,6 +43,9 @@
 
 ## To improve
 
+- make the work app read and write to url/history
+  - might have to move work post pages to different directory in /pages, so I can write to `/pages/<project name>` without conflicting with that actual page on the site, which isn't in the work app
+- make the work app muuuuuch more mobile-friendly
 - make the profile in the work view be the result of compiled markdown
 - make the importing of fontAwesome in the App component conditional (no need to load fontawesome all over the website if it's only used in a few places), or import it just in specific files that use it
 - Helmet
