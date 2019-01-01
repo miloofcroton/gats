@@ -35,6 +35,7 @@ export default class Projects extends PureComponent {
 
     return (
       <ProjectsWrapper>
+        <p>placeholder for panel</p>
 
         {children}
 

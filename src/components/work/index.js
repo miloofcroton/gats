@@ -1,6 +1,6 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 
 import Profile from './profile';
@@ -19,43 +19,52 @@ const WorkWrapper = styled.section`
   }
 `;
 
-const Work = ({ children, data }) => {
-  // const { edges: posts } = data.allMarkdownRemark;
+const Work = ({ children }) => {
 
   return (
-    <WorkWrapper>
-      <Projects
-
-      >
-        {children}
-      </Projects>
-      <Profile/>
-    </WorkWrapper>
+    <StaticQuery
+      query={graphql`
+        query WorkIndexQuery {
+          allMarkdownRemark(
+            sort: { order: DESC, fields: [frontmatter___date] }
+            filter: { frontmatter: { templateKey: { eq: "work" } } }
+          ) {
+            edges {
+              node {
+                excerpt(pruneLength: 100)
+                id
+                fields {
+                  slug
+                }
+                frontmatter {
+                  title
+                  templateKey
+                  date(formatString: "MMMM DD, YYYY")
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={data => {
+        const { edges: posts } = data.allMarkdownRemark;
+        return (
+          <WorkWrapper>
+            <Projects
+              posts={posts}
+            >
+              {children}
+            </Projects>
+            <Profile />
+          </WorkWrapper>
+        );
+      }}
+    />
   );
 };
 
 export default Work;
 
-export const pageQuery = graphql`
-  query WorkIndexQuery {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { templateKey: { eq: "work" } } }
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 100)
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
-          }
-        }
-      }
-    }
-  }
-`;
+// export const pageQuery = graphql`
+
+// `;
