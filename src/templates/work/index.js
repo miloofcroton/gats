@@ -5,7 +5,6 @@ import { graphql } from 'gatsby';
 import App from '../../app';
 import { HTMLContent } from '../../styles/Content';
 import WorkPostTemplate from './Template';
-import Work from '../../components/work';
 
 const WorkPost = ({ data }) => {
   const { markdownRemark: post } = data;
@@ -13,31 +12,27 @@ const WorkPost = ({ data }) => {
   return (
     <App>
 
-      <Work>
+      <WorkPostTemplate
 
-        <WorkPostTemplate
+        helmet={
+          <Helmet titleTemplate="Work | %s">
+            <title>{`${post.frontmatter.title}`}</title>
+            <meta
+              name="description"
+              content={`${post.frontmatter.description}`}
+            />
+          </Helmet>
+        }
 
-          helmet={
-            <Helmet titleTemplate="Work | %s">
-              <title>{`${post.frontmatter.title}`}</title>
-              <meta
-                name="description"
-                content={`${post.frontmatter.description}`}
-              />
-            </Helmet>
-          }
-
-          content={post.html}
-          contentComponent={HTMLContent}
-          description={post.frontmatter.description}
-          date={post.frontmatter.date}
-          tags={post.frontmatter.tags}
-          title={post.frontmatter.title}
-          live={post.frontmatter.live}
-          github={post.frontmatter.github}
-        />
-
-      </Work>
+        content={post.html}
+        contentComponent={HTMLContent}
+        description={post.frontmatter.description}
+        date={post.frontmatter.date}
+        tags={post.frontmatter.tags}
+        title={post.frontmatter.title}
+        live={post.frontmatter.live}
+        github={post.frontmatter.github}
+      />
 
     </App>
   );

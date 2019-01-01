@@ -1,7 +1,7 @@
 ---
 templateKey: work
 title: Maximum Intensity Fitness
-date: 2018-01-10T15:04:10.000Z
+date: 2018-09-14T15:04:10.000Z
 description: A workout tracker built using Vue
 github: https://github.com/Big-Cats/app
 live: http://maximumintensity.fitness

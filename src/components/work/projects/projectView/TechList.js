@@ -17,9 +17,7 @@ const TechList = ({ techList }) => {
   const techCards = techList.map(tech => {
     return (
       <TagBox key={tech}>
-        <TechIcon
-          tag={tech}
-        />
+        <TechIcon tag={tech}/>
         <Tag>{tech}</Tag>
       </TagBox>
     );

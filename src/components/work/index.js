@@ -1,5 +1,4 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 
@@ -19,7 +18,7 @@ const WorkWrapper = styled.section`
   }
 `;
 
-const Work = ({ children }) => {
+const Work = () => {
 
   return (
     <StaticQuery
@@ -36,10 +35,13 @@ const Work = ({ children }) => {
                 fields {
                   slug
                 }
+                html
                 frontmatter {
-                  title
                   templateKey
-                  date(formatString: "MMMM DD, YYYY")
+                  title
+                  description
+                  tags
+                  date
                 }
               }
             }
@@ -48,13 +50,19 @@ const Work = ({ children }) => {
       `}
       render={data => {
         const { edges: posts } = data.allMarkdownRemark;
+
+        const projects = posts.map(post => ({
+          title: post.node.frontmatter.title,
+          date: post.node.frontmatter.date,
+          tags: post.node.frontmatter.tags,
+          description: post.node.frontmatter.description,
+          content: post.node.html,
+          link: post.node.fields.slug,
+        }));
+
         return (
           <WorkWrapper>
-            <Projects
-              posts={posts}
-            >
-              {children}
-            </Projects>
+            <Projects projects={projects}/>
             <Profile />
           </WorkWrapper>
         );
@@ -64,7 +72,3 @@ const Work = ({ children }) => {
 };
 
 export default Work;
-
-// export const pageQuery = graphql`
-
-// `;

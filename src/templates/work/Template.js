@@ -11,23 +11,22 @@ const TagDiv = styled.div`
 `;
 
 const WorkPostWrapper = styled.section`
+  ul {
+    margin: 0 auto;
+    list-style: none;
+    padding-inline-start: 0;
 
-    ul {
-      margin: 0 auto;
-      list-style: none;
-      padding-inline-start: 0;
-
-      li {
-        a {
-          text-decoration: none;
-          color: ${ ({ theme }) => theme.darkgreen};
-        }
+    li {
+      a {
+        text-decoration: none;
+        color: ${ ({ theme }) => theme.darkgreen};
       }
     }
+  }
 
-    h3 {
-      margin: 10px auto;
-    }
+  h3 {
+    margin: 10px auto;
+  }
 `;
 
 const Desc = styled.p`

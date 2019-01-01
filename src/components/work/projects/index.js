@@ -1,28 +1,18 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 
-// import ProjectPanel from './projectPanel';
-// import ProjectView from './projectView';
+import ProjectPanel from './projectPanel';
+import ProjectView from './projectView';
 
 const ProjectsWrapper = styled.div`
   display: grid;
   grid-template-columns: 25% 75%;
 `;
 
-// <ProjectPanel
-//   projects={projects}
-//   selected={selectedProject}
-//   onSelect={this.handleSelect}
-// />
-// <ProjectView
-//   project={selectedProject}
-// />
-
 export default class Projects extends PureComponent {
 
   state = {
     selectedProject: null,
-    projects: null
   };
 
   handleSelect = (project) => {
@@ -30,15 +20,20 @@ export default class Projects extends PureComponent {
   };
 
   render() {
-    const { children } = this.props;
+
     const { selectedProject } = this.state;
+    const { projects } = this.props;
 
     return (
       <ProjectsWrapper>
-        <p>placeholder for panel</p>
-
-        {children}
-
+        <ProjectPanel
+          projects={projects}
+          selected={selectedProject}
+          onSelect={this.handleSelect}
+        />
+        <ProjectView
+          project={selectedProject}
+        />
       </ProjectsWrapper>
     );
   }

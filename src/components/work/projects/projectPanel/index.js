@@ -9,7 +9,7 @@ import ProjectList from './projectList';
 const ProjectPanelWrapper = styled.div`
 
   display: grid;
-  grid-template-rows: 15% auto;
+  grid-template-rows: 160px auto;
   border: 1px solid black;
   max-height: 1000px;
 

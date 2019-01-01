@@ -55,10 +55,11 @@ export default class ProjectSearch extends PureComponent {
 
         <label htmlFor="query">search all projects</label>
         <input
-          type="text"
+          type="search"
           name="query"
           value={query}
           onChange={this.handleFilterChange}
+          onSubmit={e => e.preventDefault()}
         />
         <label htmlFor="sort">sort by</label>
         <select

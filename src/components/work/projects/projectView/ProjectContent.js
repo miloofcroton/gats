@@ -4,6 +4,10 @@ import TechList from './TechList';
 
 const ProjectContentWrapper = styled.div`
 
+  h2, small {
+    margin-bottom: 5px;
+  }
+
     ul {
       margin: 0 auto;
       list-style: none;
@@ -29,12 +33,24 @@ const Desc = styled.p`
 
 const ProjectContent = ({ project }) => {
 
+  const sendMd = md => ({ __html: md });
+
+  const date = new Date(project.date)
+    .toLocaleDateString(
+      'en-US',
+      {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      }
+    );
+
   return (
     <ProjectContentWrapper>
-
       <h2>{project.title}</h2>
-      <Desc>{project.description}</Desc>
-
+      <h5>{project.description}</h5>
+      <small>{date}</small>
+      <Desc dangerouslySetInnerHTML={sendMd(project.content)}></Desc>
       <h3>Links</h3>
       <ul>
         <li>

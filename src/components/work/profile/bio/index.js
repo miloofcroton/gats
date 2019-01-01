@@ -25,9 +25,9 @@ const Bio = () => {
   return (
     <BioWrapper>
       <p>{topText}</p>
-      <TechList />
+      <TechList/>
       <p>{bottomText}</p>
-      <ActivityList />
+      <ActivityList/>
     </BioWrapper>
   );
 };
