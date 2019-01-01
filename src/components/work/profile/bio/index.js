@@ -7,7 +7,7 @@ const BioWrapper = styled.div`
 
   margin: 20px;
   line-height: 2rem;
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-family: 'Roboto', sans-serif;
 
   svg {

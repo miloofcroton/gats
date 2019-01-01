@@ -8,6 +8,7 @@ const ProjectListWrapper = styled.ul`
   padding: 0px;
   width: 100%;
   overflow: auto;
+  line-height: 1;
 `;
 
 const ProjectList = ({ projects, selected, onSelect }) => {
