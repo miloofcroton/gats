@@ -3,12 +3,12 @@ import App from '../../app';
 import Work from '../../components/work';
 
 
-const WorkIndex = () => {
+const WorkIndex = ({ location: { pathname } }) => {
 
   return (
 
     <App>
-      <Work/>
+      <Work pathname={pathname}/>
     </App>
 
   );

@@ -18,7 +18,7 @@ const WorkWrapper = styled.section`
   }
 `;
 
-const Work = () => {
+const Work = ({ pathname }) => {
 
   return (
     <StaticQuery
@@ -62,7 +62,7 @@ const Work = () => {
 
         return (
           <WorkWrapper>
-            <Projects projects={projects}/>
+            <Projects projects={projects} pathname={pathname}/>
             <Profile />
           </WorkWrapper>
         );

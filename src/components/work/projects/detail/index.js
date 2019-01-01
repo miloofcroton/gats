@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import ProjectContent from './ProjectContent';
 
-const ProjectViewWrapper = styled.div`
+const ProjectDetailWrapper = styled.div`
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 
@@ -11,19 +11,19 @@ const ProjectViewWrapper = styled.div`
   }
 `;
 
-const ProjectView = ({ project }) => {
+const ProjectDetail = ({ project }) => {
 
   return (
-    <ProjectViewWrapper>
+    <ProjectDetailWrapper>
       {
         !!project ?
           <ProjectContent project={project} />
           :
           <h2>Select a project on the left!</h2>
       }
-    </ProjectViewWrapper>
+    </ProjectDetailWrapper>
   );
 
 };
 
-export default ProjectView;
+export default ProjectDetail;

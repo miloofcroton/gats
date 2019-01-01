@@ -54,9 +54,7 @@ const ProjectContent = ({ project }) => {
       <h3>Links</h3>
       <ul>
         <li>
-          <a
-            href={project.github}
-            target="_blank" rel="noopener noreferrer"
+          <a href={project.github} target="_blank" rel="noopener noreferrer"
           >Github
           </a>
         </li>

@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 
-import ProjectPanel from './projectPanel';
-import ProjectView from './projectView';
+import Panel from './panel';
+import Detail from './detail';
 
 const ProjectsWrapper = styled.div`
   display: grid;
@@ -15,9 +15,20 @@ export default class Projects extends PureComponent {
     selectedProject: null,
   };
 
-  handleSelect = (project) => {
+  handleSelect = project => {
     this.setState({ selectedProject: project });
   };
+
+  checkProject = () => {
+    const { pathname, projects } = this.props;
+    // eslint-disable-next-line no-unused-vars
+    const selectedProject = projects.find(project => project.link === pathname);
+    // this.setState({ selectedProject });
+  };
+
+  componentDidMount() {
+    this.checkProject();
+  }
 
   render() {
 
@@ -26,12 +37,12 @@ export default class Projects extends PureComponent {
 
     return (
       <ProjectsWrapper>
-        <ProjectPanel
+        <Panel
           projects={projects}
           selected={selectedProject}
           onSelect={this.handleSelect}
         />
-        <ProjectView
+        <Detail
           project={selectedProject}
         />
       </ProjectsWrapper>
