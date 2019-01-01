@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const ProjectCardWrapper = styled.li`
   list-style: none;
   border-bottom: 1px solid black;
+  padding: 1rem;
 
   background-color: ${ ({ theme, selected }) => {
     return selected ? theme.darkgreen : theme.white;

@@ -11,4 +11,4 @@ tags:
   - CSS
 ---
 
-This was my first group project at Alchemy Code PDX. My team consisted of three other team members. Together, wrote component architecture using Vanilla JS. We mocked a database using a JSON and an API abstraction. Account data was stored in the browser\'s local storage. We practiced good processes, such as git usage and Agile team principles.
+This was my first group project at Alchemy Code PDX. My team consisted of three other team members. Together, wrote component architecture using Vanilla JS. We mocked a database using a JSON and an API abstraction. Account data was stored in the browser's local storage. We practiced good processes, such as git usage and Agile team principles.
