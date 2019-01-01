@@ -9,11 +9,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'GatsbyJS',
-        short_name: 'GatsbyJS',
+        name: 'Jack Toumey\'s Website',
+        short_name: 'Jack Toumey\'s Website',
         start_url: '/',
-        background_color: '#f7f0eb',
-        theme_color: '#a2466c',
+        background_color: '#212121',
+        theme_color: '#00e676',
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: 'standalone',
