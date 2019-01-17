@@ -1,7 +1,7 @@
 ---
 templateKey: play
 title: Oregon Coast
-image: no-siding.png
+image: no-siding.jpg
 date: 2019-01-16T19:58:34.813Z
 description: We took sides(ings)
 tags:
