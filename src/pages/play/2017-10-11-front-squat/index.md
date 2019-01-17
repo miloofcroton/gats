@@ -9,4 +9,4 @@ tags:
   - Me
 ---
 
-I like adding things such as chains. It varies the workouts from day to day and provides extra challenges.
+Chains are fun and look cool. It decreases the load at high flexion, letting you practice a higher load at high extension.

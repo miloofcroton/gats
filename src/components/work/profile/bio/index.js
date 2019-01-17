@@ -19,7 +19,7 @@ const BioWrapper = styled.div`
 
 const topText = 'I strive to work in no-ego, productive environments on projects that push the needle. I am capable in a number of technologies, thanks to a curious mind, and have a solid foundation in math and science. Outside of technical expertise, I have a background in working on teams in high stress situations and communication in the public sector.';
 
-const bottomText = 'A science and technology enthusiast, math inquisitor, competitive powerlifter, &amp; BJJ white belt, who loves camping and barbecuing, travels at random, does puzzles competitively, and follows football ardently.';
+const bottomText = 'A science and technology enthusiast, math inquisitor, competitive powerlifter, & BJJ white belt, who loves camping and barbecuing, travels at random, does puzzles competitively, and follows football ardently.';
 
 const Bio = () => {
   return (
