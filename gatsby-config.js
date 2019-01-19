@@ -91,7 +91,8 @@ module.exports = {
       resolve: 'gatsby-plugin-netlify',
       options: {
         allPageHeaders: [
-          'Link: </static/logo/logo.png>; rel=preload; as=image',
+          `Link: <${__dirname}/static/logo/logo.png>; rel=preload; as=image`,
+
         ],
       }
     }
