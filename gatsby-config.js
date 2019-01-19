@@ -10,15 +10,13 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Jack Toumey\'s Website',
-        short_name: 'Jack Toumey\'s Website',
+        short_name: 'JT',
         start_url: '/',
         background_color: '#212121',
         theme_color: '#00e676',
-        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
-        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: 'standalone',
-        icon: `${__dirname}/static/logo/big-logo.png`, // This path is relative to the root of the site.
-        legacy: true, // this will add apple-touch-icon links to <head>
+        icon: `${__dirname}/static/logo/big-logo.png`,
+        legacy: true,
         // theme_color_in_head: false, // This will avoid adding theme-color meta tag.
       },
     },
