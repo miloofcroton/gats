@@ -86,15 +86,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-purgecss', // must be after other CSS plugins
-    {
-      // make sure to keep this last in the plugin array
-      resolve: 'gatsby-plugin-netlify',
-      options: {
-        allPageHeaders: [
-          'Link: rel=preload; as=image',
-
-        ],
-      }
-    }
+    'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 };
