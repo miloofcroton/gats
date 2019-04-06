@@ -1,7 +1,7 @@
 ---
 templateKey: thoughts
 title: Consciousness
-date: 2016-12-17T15:04:10.000Z
+date: 2019-01-01T15:04:10.000Z
 description: What is it?
 tags:
   - movies
